@@ -16,7 +16,7 @@ public class DataHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql = "CREATE TABLE mahasiswa(no integer primary key, nama text null, tgl text null, jk text null, jurusan text null);";
+        String sql = "CREATE TABLE mahasiswa(no INTEGER PRIMARY KEY AUTOINCREMENT, nama text null, tgl text null, jk text null, jurusan text null);";
         Log.d("Data", "onCreate : " + sql);
         db.execSQL(sql);
 

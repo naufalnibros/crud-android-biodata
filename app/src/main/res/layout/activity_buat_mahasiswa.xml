@@ -11,10 +11,12 @@
     tools:context=".BuatMahasiswa">
 
     <EditText
+        android:inputType="number"
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView1"
+        android:hint="No. Induk"
         android:layout_below="@+id/textView1" >
 
         <requestFocus />
